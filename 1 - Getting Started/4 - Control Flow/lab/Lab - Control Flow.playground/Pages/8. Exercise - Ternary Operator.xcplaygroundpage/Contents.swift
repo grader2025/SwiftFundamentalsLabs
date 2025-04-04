@@ -12,5 +12,8 @@ if number1 > number2 {
 } else {
     largest = number2
 }
+print(largest)
 
+var largestAlt:Int = (number1 > number2) ? number1 : number2
+print(largestAlt)
 //: [Previous](@previous)  |  page 8 of 9  |  [Next: App Exercise - Ternary Messages](@next)

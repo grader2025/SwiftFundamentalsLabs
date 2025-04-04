@@ -3,8 +3,30 @@
  
  Imagine you are creating an app that will monitor location. Create a `GPS` struct with two variable properties, `latitude` and `longitude`, both with default values of 0.0.
  */
+struct Car {
+  var type: String
+  var color: String
+  var year: Int
+  var topSpeed: Int
 
+  func startEngine() {
+    print("The \(color) \(year) \(type)'s engine has started.")
+  }
 
+  func drive() {
+    print("The \(color) \(year) \(type) is moving.")
+  }
+
+  func park() {
+    print("The \(color) \(year) \(type) is parked.")
+  }
+}
+
+let firstCar = Car(type: "truck", color: "red", year: 2010, topSpeed: 120)
+let secondCar = Car(type: "sedan", color: "blue", year: 2013, topSpeed: 125)
+
+firstCar.startEngine()
+firstCar.drive()
 /*:
  Create a variable instance of `GPS` called `somePlace`. It should be initialized without supplying any arguments. Print out the latitude and longitude of `somePlace`, which should be 0.0 for both.
  */
